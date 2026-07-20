@@ -1,0 +1,118 @@
+@media (max-width:768px){
+
+    /* Navbar */
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    /* Menu */
+    .menu{
+        display:none;
+        flex-direction:column;
+        align-items:center;
+        gap:15px;
+        width:100%;
+        text-align:center;
+    }
+
+    /* Menu Open */
+    .menu.active{
+        display:flex;
+    }
+
+    /* Hamburger */
+    .menu-toggle{
+        display:block;
+        font-size:30px;
+        cursor:pointer;
+    }
+
+    /* Hide Login Button */
+    .login-btn{
+        display:none;
+    }
+
+    /* Hero */
+    .hero{
+        margin-top:80px;
+        padding:0 20px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    /* Features */
+    .features{
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+    }
+
+    .card{
+        width:90%;
+        max-width:350px;
+    }
+
+}
+/* Pricing */
+
+.pricing-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.price-card{
+    width:90%;
+    max-width:350px;
+}
+/* Testimonials */
+
+.testimonial-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.testimonial-card{
+    width:90%;
+    max-width:350px;
+}
+/* CTA Responsive */
+
+@media (max-width:768px){
+
+    .cta h2{
+        font-size:34px;
+    }
+
+    .cta p{
+        font-size:18px;
+    }
+
+}
+/* Footer Responsive */
+
+.footer-links{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+/* AI Chat Responsive */
+
+.chat-box{
+    width:95%;
+}
+
+.chat-input{
+    flex-direction:column;
+}
+
+.chat-input button{
+    width:100%;
+}

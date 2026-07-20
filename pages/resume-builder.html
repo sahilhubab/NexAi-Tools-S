@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WowGe AI Resume Builder</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="chat-header">
+
+    <a href="dashboard.html" class="back-btn">← Dashboard</a>
+
+</div>
+
+<div class="resume-heading">
+
+<h3>📄 WowGe AI Resume Builder</h3>
+
+<h2>Build Your Professional Resume</h2>
+
+<p>Create an ATS-friendly professional resume in minutes with WowGe AI.</p>
+
+</div>
+
+    <section class="writer-section">
+
+        <div class="writer-box">
+
+           
+
+<div class="option-group">
+
+    <label for="full-name">Full Name</label>
+
+    <input
+        type="text"
+        id="full-name"
+        placeholder="Enter your full name"
+    >
+
+</div>
+
+<div class="option-group">
+
+    <label for="email">Email Address</label>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Enter your email address"
+    >
+
+</div>
+
+<div class="option-group">
+
+    <label for="phone">Phone Number</label>
+
+    <input
+        type="tel"
+        id="phone"
+        placeholder="Enter your phone number"
+    >
+</div>
+
+<div class="option-group">
+
+    <label for="address">Address</label>
+
+    <textarea
+        id="address"
+        rows="3"
+        placeholder="Enter your address"
+    ></textarea>
+
+</div>
+
+<h3>🎓 Education</h3>
+
+<div class="option-group">
+
+    <textarea
+        id="education"
+        rows="4"
+        placeholder="Example:
+B.Sc. Computer Science
+XYZ University
+2023 - 2026"
+    ></textarea>
+
+</div>
+
+<h3>🛠 Skills</h3>
+
+<div class="option-group">
+
+    <textarea
+        id="skills"
+        rows="4"
+        placeholder="Example:
+HTML
+CSS
+JavaScript
+Video Editing
+MS Office"
+    ></textarea>
+
+</div>
+<h3>💼 Work Experience</h3>
+
+<div class="option-group">
+
+    <textarea
+        id="experience"
+        rows="5"
+        placeholder="Example:
+
+Video Editor - ABC Studio
+2024 - Present
+• Edited 100+ videos
+• Created YouTube content
+• Worked with clients worldwide"
+    ></textarea>
+
+</div>
+ <h3>🚀 Projects</h3>
+
+<div class="option-group">
+
+    <textarea
+        id="projects"
+        rows="5"
+        placeholder="Example:
+
+WowGe AI
+• Built an AI-powered web application
+• Features: AI Chat, AI Writer, AI Translator
+Portfolio Website
+• Designed a responsive personal portfolio"
+    ></textarea>
+
+</div>
+
+<button id="generate-resume-btn">
+
+    📄 Generate Resume
+
+</button>
+        </div>
+        <div class="resume-preview">
+
+    <h3>📄 Resume Preview</h3>
+    <button id="copy-resume-btn" class="primary-btn">
+    📋 Copy Resume
+</button>
+
+<button id="download-pdf-btn" class="copy-btn">
+    📥 Download PDF
+</button>
+
+    <div id="resume-output">
+
+        <p>Your professional resume will appear here.</p>
+
+    </div>
+
+</div>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/resume-builder.js"></script>
+
+</body>
+
+</html>

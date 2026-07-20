@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Writer | WowGe AI Tools</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+
+<body>
+
+<header class="chat-header">
+
+   <a href="dashboard.html" class="back-btn"> ← Dashboard </a>
+
+    <h2>✍️ WowGe AI Writer</h2>
+
+</header>
+
+<section class="writer-section">
+
+    <h2>AI Writer</h2>
+
+    <div class="writer-box">
+
+      <div class="writer-options">
+
+    <div class="option-group">
+
+        <label for="writing-type">Writing Type</label>
+
+        <select id="writing-type">
+
+            <option value="blog">📝 Blog Post</option>
+            <option value="youtube">🎥 YouTube Script</option>
+            <option value="email">📧 Email</option>
+            <option value="caption">📱 Instagram Caption</option>
+            <option value="proposal">💼 Fiverr Proposal</option>
+            <option value="resume">📄 Resume</option>
+
+        </select>
+
+    </div>
+
+    <div class="option-group">
+
+        <label for="writing-tone">Tone</label>
+
+        <select id="writing-tone">
+
+            <option value="professional">💼 Professional</option>
+            <option value="friendly">😊 Friendly</option>
+            <option value="casual">😎 Casual</option>
+            <option value="formal">📄 Formal</option>
+            <option value="persuasive">🚀 Persuasive</option>
+
+        </select>
+
+    </div>
+
+    <div class="option-group">
+
+        <label for="word-count">Word Count</label>
+
+        <select id="word-count">
+
+            <option value="100">100 Words</option>
+            <option value="300" selected>300 Words</option>
+            <option value="500">500 Words</option>
+            <option value="1000">1000 Words</option>
+
+        </select>
+
+    </div>
+
+</div>
+        <textarea
+            id="writer-prompt"
+            placeholder="Describe what you want AI to write..."
+        ></textarea>
+        <div class="writer-stats">
+
+    <span id="word-counter">
+        Words: 0
+    </span>
+
+    <span id="char-counter">
+        Characters: 0
+    </span>
+
+</div>
+
+        <button id="generate-btn">
+            ✨ Generate Content
+        </button>
+        <button id="download-writer-btn">
+    📥 Download TXT
+</button>
+<button id="clear-writer-btn">
+    🗑 Clear Output
+</button>
+
+        <div id="writer-output">
+
+            <p>Your AI-generated content will appear here...</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="../js/writer.js"></script>
+
+</body>
+</html>

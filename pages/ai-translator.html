@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>WowGe AI Translator</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+   <div class="chat-header">
+
+   <a href="dashboard.html" class="back-btn">← Dashboard </a>
+    <h2>🌍 WowGe AI Translator</h2>
+
+</div>
+
+<section class="writer-section">
+
+    <div class="writer-box">
+
+       <div class="writer-options">
+
+    <div class="option-group">
+
+        <label for="from-language">From</label>
+
+        <select id="from-language">
+
+            <option value="auto">🌐 Auto Detect</option>
+            <option value="en">🇺🇸 English</option>
+            <option value="hi">🇮🇳 Hindi</option>
+            <option value="es">🇪🇸 Spanish</option>
+            <option value="fr">🇫🇷 French</option>
+            <option value="de">🇩🇪 German</option>
+            <option value="it">🇮🇹 Italian</option>
+            <option value="pt">🇵🇹 Portuguese</option>
+            <option value="ru">🇷🇺 Russian</option>
+            <option value="ja">🇯🇵 Japanese</option>
+            <option value="ko">🇰🇷 Korean</option>
+            <option value="zh">🇨🇳 Chinese</option>
+            <option value="ar">🇸🇦 Arabic</option>
+
+        </select>
+
+    </div>
+
+    <button id="swap-languages" type="button">
+        ⇄
+    </button>
+
+    <div class="option-group">
+
+        <label for="to-language">To</label>
+
+        <select id="to-language">
+
+            <option value="en">🇺🇸 English</option>
+            <option value="hi" selected>🇮🇳 Hindi</option>
+            <option value="es">🇪🇸 Spanish</option>
+            <option value="fr">🇫🇷 French</option>
+            <option value="de">🇩🇪 German</option>
+            <option value="it">🇮🇹 Italian</option>
+            <option value="pt">🇵🇹 Portuguese</option>
+            <option value="ru">🇷🇺 Russian</option>
+            <option value="ja">🇯🇵 Japanese</option>
+            <option value="ko">🇰🇷 Korean</option>
+            <option value="zh">🇨🇳 Chinese</option>
+            <option value="ar">🇸🇦 Arabic</option>
+
+        </select>
+
+    </div>
+
+</div>
+        <textarea
+            id="translator-input"
+            placeholder="Enter text to translate..."
+        ></textarea>
+
+        <button id="translate-btn">
+
+            🌍 Translate
+
+        </button>
+        <button id="clear-translation-btn">
+    🗑 Clear Translation
+</button>
+
+        <div id="translator-output">
+
+            <p>Your translation will appear here...</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script src="../js/translator.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+</body>
+
+</html>
